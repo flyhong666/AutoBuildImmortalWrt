@@ -92,6 +92,7 @@ jobs:
           body_path: ${{ github.workspace }}/info.md
           files: |
             ${{ github.workspace }}/bin/targets/x86/64/*squashfs-combined-efi.img.gz
+            ${{ github.workspace }}/bin/targets/x86/64/*squashfs-combined.img.gz
             ${{ github.workspace }}/bin/targets/x86/64/*squashfs-combined-efi.vmdk
           token: ${{ secrets.GITHUB_TOKEN }}
         env:
