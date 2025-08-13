@@ -160,5 +160,5 @@ FILE_PATH="/etc/openwrt_release"
 NEW_DESCRIPTION="Packaged by wukongdaily"
 sed -i "s/DISTRIB_DESCRIPTION='[^']*'/DISTRIB_DESCRIPTION='$NEW_DESCRIPTION'/" "$FILE_PATH"
 sed -i '/DISTRIB_RELEASE/d' "$FILE_PATH"
-echo "DISTRIB_RELEASE='R25.8.11'" >> "$FILE_PATH"
+echo "DISTRIB_RELEASE='R25.8.13'" >> "$FILE_PATH"
 exit 0
