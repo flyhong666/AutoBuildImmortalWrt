@@ -54,3 +54,7 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-ddns luci-i18n-ddns-zh-cn ddns-script
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-aria2 luci-i18n-aria2-zh-cn"
 # qBittorrent
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-qbittorrent luci-i18n-qbittorrent-zh-cn"
+# samba4
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES -luci-app-samba4 -luci-i18n-samba4-zh-cn"
+# ksmbd
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-ksmbd luci-i18n-ksmbd-zh-cn"
