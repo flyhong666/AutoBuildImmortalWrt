@@ -174,23 +174,3 @@ grep -qF "dmesg -n 3" "$RC_LOCAL" || \
     sed -i '/^exit 0/i dmesg -n 3' "$RC_LOCAL"
 exit 0
 
-# 配置 ttyd 服务
-TTYD_CONFIG="/etc/config/ttyd"
-echo "Configuring ttyd service" >>$LOGFILE
-
-# 如果配置文件不存在则创建
-if [ ! -f "$TTYD_CONFIG" ]; then
-    echo "# ttyd configuration" > "$TTYD_CONFIG"
-    echo "config ttyd" >> "$TTYD_CONFIG"
-    echo "    option command '/bin/login -f root'" >> "$TTYD_CONFIG"
-    echo "Created new ttyd config" >>$LOGFILE
-else
-    # 删除所有现有 ttyd 配置节
-    while uci -q delete ttyd.@ttyd[0]; do :; done
-    
-    # 添加新的 ttyd 配置
-    uci add ttyd ttyd
-    uci set ttyd.@ttyd[-1].command='/bin/login -f root'
-    uci commit ttyd
-    echo "Updated existing ttyd config" >>$LOGFILE
-fi
