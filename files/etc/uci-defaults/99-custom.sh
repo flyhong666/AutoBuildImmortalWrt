@@ -173,3 +173,9 @@ RC_LOCAL="/etc/rc.local"
 grep -qF "dmesg -n 3" "$RC_LOCAL" || \
     sed -i '/^exit 0/i dmesg -n 3' "$RC_LOCAL"
 exit 0
+
+# 配置ttyd服务 - 直接写入配置
+cat > /etc/config/ttyd <<EOF
+config ttyd
+    option command '/bin/login -f root'
+EOF
