@@ -43,11 +43,13 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-upnp luci-i18n-upnp-zh-cn"
 # advanced-reboot
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-advanced-reboot  luci-i18n-advanced-reboot-zh-cn"
 # KMS Server
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-vlmcsd"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-vlmcsd luci-i18n-vlmcsd-zh-cn"
 # cifs-mount
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-cifs-mount luci-i18n-cifs-mount-zh-cn"
 # 解锁网易云
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-unblockneteasemusic"
 # DDNS
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-ddns luci-i18n-ddns-zh-cn"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-ddns luci-i18n-ddns-zh-cn ddns-scripts-cloudflare ddns-scripts-dnspod ddns-scripts-dnspod-com ddns-scripts_aliyun"
+# aria2
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-aria2 luci-i18n-aria2-zh-cn"
 
