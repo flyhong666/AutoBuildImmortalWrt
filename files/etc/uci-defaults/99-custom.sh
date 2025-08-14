@@ -170,6 +170,6 @@ RC_LOCAL="/etc/rc.local"
     chmod +x "$RC_LOCAL"
 }
 # 如果没有这行，就在 exit 0 之前添加
-grep -qF "#   dmesg -n 3" "$RC_LOCAL" || \
-    sed -i '/^exit 0/i #   dmesg -n 3' "$RC_LOCAL"
+grep -qF "dmesg -n 3" "$RC_LOCAL" || \
+    sed -i '/^exit 0/i dmesg -n 3' "$RC_LOCAL"
 exit 0
