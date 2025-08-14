@@ -52,4 +52,5 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-unblockneteasemusic"
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-ddns luci-i18n-ddns-zh-cn ddns-scripts-cloudflare ddns-scripts-dnspod ddns-scripts-dnspod-com ddns-scripts_aliyun"
 # aria2
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-aria2 luci-i18n-aria2-zh-cn"
-
+# qBittorrent
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-qbittorrent luci-i18n-qbittorrent-zh-cn"
