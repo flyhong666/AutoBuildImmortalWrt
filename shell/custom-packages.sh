@@ -58,3 +58,5 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-qbittorrent luci-i18n-qbittorrent-zh-
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES -luci-app-samba4 -luci-i18n-samba4-zh-cn"
 # ksmbd
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-ksmbd luci-i18n-ksmbd-zh-cn"
+# zerotier
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-zerotier luci-i18n-zerotier-zh-cn"
