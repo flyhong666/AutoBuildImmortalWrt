@@ -37,5 +37,5 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-turboacc"
 # Lucky大吉 
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-lucky lucky"
 # dufs
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES -luci-app-dufs -luci-i18n-dufs-zh-cn"
+#CUSTOM_PACKAGES="$CUSTOM_PACKAGES -luci-app-dufs -luci-i18n-dufs-zh-cn"
 
