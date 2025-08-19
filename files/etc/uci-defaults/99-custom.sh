@@ -179,7 +179,6 @@ if opkg list-installed | grep -q '^luci-app-advancedplus '; then
     sed -i '/\/usr\/bin\/zsh/d' /etc/init.d/advancedplus
 fi
 
-
 sed -i '/DISTRIB_RELEASE/d' "$FILE_PATH"
 echo "DISTRIB_RELEASE='R25.8.18'" >> "$FILE_PATH"
 
