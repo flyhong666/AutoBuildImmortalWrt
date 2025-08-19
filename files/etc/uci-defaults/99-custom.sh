@@ -171,6 +171,15 @@ FILE_PATH="/etc/openwrt_release"
 NEW_DESCRIPTION="Packaged by wukongdaily"
 sed -i "s/DISTRIB_DESCRIPTION='[^']*'/DISTRIB_DESCRIPTION='$NEW_DESCRIPTION'/" "$FILE_PATH"
 
+
+# 若luci-app-advancedplus (进阶设置)已安装 则去除zsh的调用 防止命令行报 /usb/bin/zsh: not found的提示
+if opkg list-installed | grep -q '^luci-app-advancedplus '; then
+    sed -i '/\/usr\/bin\/zsh/d' /etc/profile
+    sed -i '/\/bin\/zsh/d' /etc/init.d/advancedplus
+    sed -i '/\/usr\/bin\/zsh/d' /etc/init.d/advancedplus
+fi
+
+
 sed -i '/DISTRIB_RELEASE/d' "$FILE_PATH"
 echo "DISTRIB_RELEASE='R25.8.18'" >> "$FILE_PATH"
 
@@ -184,5 +193,6 @@ RC_LOCAL="/etc/rc.local"
 # 如果没有这行，就在 exit 0 之前添加
 grep -qF "dmesg -n 3" "$RC_LOCAL" || \
     sed -i '/^exit 0/i dmesg -n 3' "$RC_LOCAL"
+
 exit 0
 
