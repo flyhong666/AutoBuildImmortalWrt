@@ -197,7 +197,7 @@ if opkg list-installed | grep -q '^luci-app-advancedplus '; then
 fi
 
 sed -i '/DISTRIB_RELEASE/d' "$FILE_PATH"
-echo "DISTRIB_RELEASE='R25.8.26'" >> "$FILE_PATH"
+echo "DISTRIB_RELEASE='R25.9.1'" >> "$FILE_PATH"
 
 RC_LOCAL="/etc/rc.local"
 # 确保 rc.local 存在
