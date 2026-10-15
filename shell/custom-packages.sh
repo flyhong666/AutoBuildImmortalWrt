@@ -219,4 +219,4 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-unblockneteasemusic"
 # DDNS
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-ddns luci-i18n-ddns-zh-cn ddns-scripts-cloudflare ddns-scripts-dnspod ddns-scripts-dnspod-com ddns-scripts_aliyun"
 # other
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES lsof iperf3 cgroupfs-mount htop"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES lsof iperf3 cgroupfs-mount htop kmod-usb3"
