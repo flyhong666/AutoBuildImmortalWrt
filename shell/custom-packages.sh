@@ -213,3 +213,32 @@
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-xinetd-zh-cn"
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-xlnetacc-zh-cn"
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-zerotier-zh-cn"
+
+# dufs
+#CUSTOM_PACKAGES="$CUSTOM_PACKAGES -luci-app-dufs -luci-i18n-dufs-zh-cn"
+# uPnP
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-upnp luci-i18n-upnp-zh-cn"
+# advanced-reboot
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-advanced-reboot  luci-i18n-advanced-reboot-zh-cn"
+# KMS Server
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-vlmcsd luci-i18n-vlmcsd-zh-cn"
+# cifs-mount
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-cifs-mount luci-i18n-cifs-mount-zh-cn"
+# 解锁网易云
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-unblockneteasemusic"
+# DDNS
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-ddns luci-i18n-ddns-zh-cn ddns-scripts-cloudflare ddns-scripts-dnspod ddns-scripts-dnspod-com ddns-scripts_aliyun"
+# aria2
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-aria2 luci-i18n-aria2-zh-cn"
+# qBittorrent
+#CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-qbittorrent luci-i18n-qbittorrent-zh-cn"
+# samba4
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES -luci-app-samba4 -luci-i18n-samba4-zh-cn"
+# ksmbd
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-ksmbd luci-i18n-ksmbd-zh-cn"
+# zerotier
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-zerotier luci-i18n-zerotier-zh-cn"
+# rustdesk-server
+#CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-rustdesk-server luci-i18n-rustdesk-server-zh-cn"
+# other
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES lsof iperf3 cgroupfs-mount htop"
